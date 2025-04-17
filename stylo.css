@@ -2,7 +2,6 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 
@@ -181,15 +180,30 @@ padding: 5%;
   width: 70px;
   height: 30px;
   border-radius: 5px;
-  margin-left: 35%;
+  margin-left: 37%;
   margin-top: 3%;
   cursor: pointer;
+  
 }
 #form{
  text-align: center; 
 
 }
 
+.formulario
+{
+
+
+width: 65%;
+height: 50%;
+background-color: rgb(202, 171, 231);
+padding-left: 5%;
+padding-top: 3%;
+border: solid rgb(86, 53, 105);
+border-radius: 1%;
+box-shadow:  5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+padding-bottom: 3%;
+}
 #formulario
 {
 margin-left: 10%;
@@ -203,10 +217,8 @@ border: solid rgb(86, 53, 105);
 border-radius: 1%;
 box-shadow:  5px 5px 10px 2px rgba(0, 0, 0, 0.5);
 padding-bottom: 3%;
-
-
-
 }
+
 #imgform{
 width:30%;
 background-color: rgb(92, 49, 133);
@@ -214,15 +226,25 @@ border-radius: 50%;
 box-shadow:  5px 5px 10px 2px rgba(0, 0, 0, 0.5);
 height: 30%;
 margin-left: 15%;
-
-
 }
 
+#h2form{
+  padding-bottom: 10%;
+}
+
+#botao{
+  cursor: pointer;
+}
 #contato
 {
  padding-top: 5%;
   display: flex; 
 }
+
+#imgzap{ width: 10%;
+  position: fixed;
+  right: 0;
+  bottom: 0;}
 
 footer {
   background-color:  rgb(37, 17, 56);
@@ -268,20 +290,28 @@ footer {
 
 @media (max-width: 575px) {
   #div1 {
-      flex-direction: column;
+
       height: auto;
       padding: 10px;
+      align-items: flex-start;
+      
+
   }
 
   nav {
-      flex-direction: column;
-      margin-right: 0;
-      margin-top: 10px;
-      display: none;
+       flex-direction: column; 
+      
+     width: 100%;
+     display: flex;
+     
+     
+   
   }
 
+
   #imgacai {
-      width: 100%; 
+      width: 40%; 
+    display: none;
   }
 
   #sobre {
@@ -299,6 +329,8 @@ footer {
       width: 80%;
       height: auto; 
   }
+
+
 }
 
 @media (max-width: 575px) {
@@ -308,9 +340,29 @@ footer {
       height: auto; 
   }
 
-  #h2form {
-      text-align: center; 
+  .main{
+    flex-direction: column;
   }
+  .card
+  {
+    width: 100%;
+    flex-direction: column;
+  }
+#contato
+{
+  flex-direction: column;
+  align-items: center;
+ 
+}
+#imgform{
+  width:50%;
+  background-color: rgb(92, 49, 133);
+  border-radius: 50%;
+  box-shadow:  5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  height: 50%;
+ margin-right: 15%;
+}
+
 
   input[type="text"],
   input[type="email"],
@@ -341,4 +393,21 @@ footer {
       margin-bottom: 20px;
       text-align: center;
   }
+  #sobre {
+    flex-direction: column; 
+    align-items: center; 
 }
+
+#sobrep {
+    padding-right: 0; 
+    width: 90%; 
+    font-size: 120%;
+}
+
+#imgsobre {
+    width: 80%;
+    height: auto; 
+}
+
+}
+
